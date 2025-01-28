@@ -1,12 +1,13 @@
 name: second
 on: push
 jobs:
- job1:
-    - name: first_job
-      runs-on: ubuntu-latest
-      steps:
-        step1:
-        - name: first_test
-          run: echo "hello world"
+  job1:
+    name: first_job
+    runs-on: ubuntu-latest
+    steps:
+      - name: first_test
+        run: echo "hello world"
+      - name: second_test
+        run: echo "hello second"
 
                                

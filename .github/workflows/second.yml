@@ -11,5 +11,8 @@ jobs:
         run: echo "hello second"
       - name: third_test
         run: echo "third hello"
+      - name: Python Syntax Checker
+        uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
+          
 
                                

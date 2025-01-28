@@ -1,0 +1,32 @@
+name: first_exercise
+
+on: push
+
+jobs:
+  job1:
+    name: first_job
+    runs-on: ubuntu-latest
+    steps:
+      - name: first_step_in_job1
+        run: echo "hello first"
+
+  job2:
+    name: second_job
+    runs-on: windows-latest
+    steps:
+      - name: second_step_in_job2
+        run: echo "hello second"
+
+  job3:
+    name: third_job
+    runs-on: macos-latest
+    steps:
+      - name: third_step_in_job3
+        run: echo "hello third"
+
+  job4:
+    name: fourth_job
+    runs-on: ubuntu-latest 
+    steps:
+      - name: fourth_step_in_job4
+        run: echo "hello fourth"
